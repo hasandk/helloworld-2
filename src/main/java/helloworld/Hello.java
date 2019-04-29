@@ -8,6 +8,7 @@ public class Hello {
 
     @GetMapping("/")
     public String home(){
+        System.out.println("index called");
         return "index";
     }
 }
