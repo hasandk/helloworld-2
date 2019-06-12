@@ -4,13 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Hello {
+public class HomeController {
 
     @GetMapping("/")
     public String home(){
-        System.out.println("index called");
-        System.out.println("index is done ");
-        System.out.println("index is running ");
+        System.out.println("someone has changed something");
+
         return "index";
     }
 }
